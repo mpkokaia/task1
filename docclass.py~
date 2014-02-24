@@ -141,6 +141,8 @@ def train():
                 all_data+=user['wall_get'][i]['text']+' '
         if  u'interests' in user['users_get']:
             all_data+=user['users_get']['interests']+' '
+            print 'interests'+'\n\n'
+            print user['users_get']['interests']
         category=raw_input('1-good, 0-bad')
         if category=='1':
             cat='good'
